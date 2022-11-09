@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@prisma/client": "^4.7.0-integration-client-extensions.2",
+    "prisma": "^4.7.0-integration-client-extensions.2"
+  },
+  "scripts": {
+    "dev": "npx ts-node main.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9"
+  }
+}

@@ -2,15 +2,14 @@
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 generator client {
-  provider = "prisma-client-js"
-   previewFeatures = ["clientExtensions"]
+  provider        = "prisma-client-js"
+  previewFeatures = ["clientExtensions"]
 }
 
 datasource db {
   provider = "postgresql"
   url      = "postgres://prisma:prisma@localhost:5432/multischema"
 }
-
 
 model Post {
   id        Int      @id @default(autoincrement())
@@ -31,11 +30,11 @@ model Profile {
 }
 
 model User {
-  id      Int      @id @default(autoincrement())
-  email   String   @unique
-  firstName    String?
-  lastName    String?
-  age Int
-  posts   Post[]
-  profile Profile?
-} 
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  firstName String?
+  lastName  String?
+  age       Int
+  posts     Post[]
+  profile   Profile?
+}

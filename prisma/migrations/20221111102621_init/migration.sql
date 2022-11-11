@@ -26,6 +26,7 @@ CREATE TABLE "User" (
     "email" TEXT NOT NULL,
     "firstName" TEXT,
     "lastName" TEXT,
+    "age" INTEGER NOT NULL,
 
     CONSTRAINT "User_pkey" PRIMARY KEY ("id")
 );
